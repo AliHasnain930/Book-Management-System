@@ -1,0 +1,24 @@
+<form action="/books" method = "POST" class = "form-group">
+    <div class = "mb-3 mr-4">
+        <label for="">Title</label>
+        <input type="text" class = "form-control" name = "title" value = "<%= book.title %>"  required>
+    </div>
+    <div class = "mb-3 mr-4">
+        <label for="">Author</label>
+        <input type="text" class = "form-control" name = "author"value = "<%= book.author %>" required>
+    </div>
+    <div class = "mb-3 mr-4">
+        <label for="">Category</label>
+        <input type="text" class = "form-control" name = "category" value = "<%= book.category %>" required>
+    </div>
+    <div class = "mb-3 mr-4">
+        <label for="">Publisher</label>
+        <input type="text" class = "form-control" name = "publisher" value = "<%= book.publisher %>" required>
+    </div>
+    <div class = "mb-3 mr-4">
+        <label for="">Publishing Date</label>
+        <input type="date" class = "form-control" name = "date" value = "<%= book.publishingDate %>" required>
+    </div>
+    <a href="/" class = "btn btn-dark">Cancel</a>
+    <button type="submit" class = "btn btn-primary">Save</button>
+</form>
